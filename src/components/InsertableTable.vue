@@ -26,11 +26,7 @@ function validData() {
 
 
 <template>
-<div class="nav">
-  <a href="home">Home</a>
-  <a href="programs">Programs</a>
-  <a href="help">Help</a>
-</div>
+
 <div class="Table">
   <div class="Title">
     <p>Participant Application Form Test App</p>
@@ -71,29 +67,29 @@ DOB: <input type='date' v-model='dob'/><br>
 </template>
 
 <style scoped>
-.Table
+  .Table
     {
         display: table;
     }
-    .Title
+  .Title
     {
         display: table-caption;
         text-align: center;
         font-weight: bold;
         font-size: larger;
     }
-    .Heading
+  .Heading
     {
         display: table-row;
         font-weight: bold;
         text-align: center;
     }
-    .Row
+  .Row
     {
         display: table-row;
         cursor:pointer;
     }
-    .Cell
+  .Cell
     {
         display: table-cell;
         border: solid;

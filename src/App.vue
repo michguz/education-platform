@@ -1,19 +1,22 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue'
+import Programs from './components/Programs.vue'
 import InsertableTable from './components/InsertableTable.vue';
+import { RouterView } from 'vue-router';
 </script>
 
+
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="nav">
+    <a href="home">Home</a>
+    <a href="programs">Programs</a>
+    <a href="help">Help</a>
+    <router-link to="/">HOME</router-link>
+    <router-link to="/Programs" msg="TESTETS">PROGRAMS</router-link>
   </div>
-  <HelloWorld msg="Vite + Vue" />
-  <InsertableTable></InsertableTable>
+  <h1>Education Platform</h1>
+  <RouterView/>
+  <InsertableTable/>
 </template>
 
 <style scoped>
@@ -28,5 +31,10 @@ import InsertableTable from './components/InsertableTable.vue';
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+.nav {
+  display: inline;
+  padding: 8px;
+  background-color: #eec590
 }
 </style>
