@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import InsertableTable from './components/InsertableTable.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <InsertableTable></InsertableTable>
 </template>
 
 <style scoped>
@@ -22,7 +24,7 @@ import HelloWorld from './components/HelloWorld.vue'
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #83ff64aa);
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
