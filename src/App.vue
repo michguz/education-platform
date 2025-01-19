@@ -3,6 +3,7 @@ import Home from './components/Home.vue'
 import Programs from './components/Programs.vue'
 import InsertableTable from './components/InsertableTable.vue';
 import { RouterView } from 'vue-router';
+import Editor from '@tinymce/tinymce-vue';
 </script>
 
 
@@ -17,6 +18,13 @@ import { RouterView } from 'vue-router';
   <h1>Education Platform</h1>
   <RouterView/>
   <InsertableTable/>
+
+  <Editor 
+    api-key="no-api-key" 
+    :init="{
+      plugins: 'lists link image table code help'
+    }"
+  />
 </template>
 
 <style scoped>
