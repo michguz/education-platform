@@ -1,0 +1,19 @@
+VUE.JS MODULES
+
+Vue Router
+    - Enables navigation within the single-apge application
+    - Client-side routing: just loads different parts of the app code, therefore doesn't require reloading the page
+
+Bootstrap
+    - CSS design library and collection of visual components
+    - Enables data validation
+    - Icons, data inputs and buttons for forms
+
+Vuex
+    - Used for state management, data that need to be accessible throuhgout the app
+    - Example: A 'My cart' feature in a shopping app
+    - ?? Used for user details being dispayed on a page
+
+FluentUI
+    - Design standard used for Microsoft suite fo applications
+    - Integrate visually with SPO

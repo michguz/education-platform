@@ -8,14 +8,14 @@ import Editor from '@tinymce/tinymce-vue';
 
 
 <template>
-  <div class="nav">
-    <a href="home">Home</a>
-    <a href="programs">Programs</a>
-    <a href="help">Help</a>
-    <router-link to="/">HOME</router-link>
-    <router-link to="/Programs" msg="TESTETS">PROGRAMS</router-link>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <a class="navbar-brand" href="#">NsAV</a>
+      <router-link to="/">HOME</router-link>
+      <router-link to="/Programs" msg="TESTETS">Programs</router-link>
+    </nav>
   </div>
-  <h1>Education Platform</h1>
+  <h1>Vue.js Test Application</h1>
   <RouterView/>
   <InsertableTable/>
 
@@ -45,4 +45,5 @@ import Editor from '@tinymce/tinymce-vue';
   padding: 8px;
   background-color: #eec590
 }
+
 </style>
