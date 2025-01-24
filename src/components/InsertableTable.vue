@@ -61,9 +61,12 @@ function validData() {
 
 
 <br>
+
+<div>
 Name: <input type='text' v-model='name'/><br>
 DOB: <input type='date' v-model='dob'/><br>
-<button @click="addData">Add</button>
+<button type="button" @click="addData">Add</button>
+</div>
 </template>
 
 <style scoped>
