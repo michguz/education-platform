@@ -9,8 +9,9 @@ Bootstrap
     - Enables data validation
     - Icons, data inputs and buttons for forms
 
-Vuex
-    - Used for state management, data that need to be accessible throuhgout the app
+Pinia (or Vuex)
+    - A store library for Vue
+    - Used for state management, data that need shared between components/pages
     - Example: A 'My cart' feature in a shopping app
     - ?? Used for user details being dispayed on a page
 
