@@ -8,6 +8,7 @@ Bootstrap
     - CSS design library and collection of visual components
     - Enables data validation
     - Icons, data inputs and buttons for forms
+    - Alternative: PrimeVue
 
 Pinia (or Vuex)
     - A store library for Vue
@@ -19,3 +20,7 @@ Pinia (or Vuex)
 FluentUI
     - Design standard used for Microsoft suite fo applications
     - Integrate visually with SPO
+
+Vuelidate
+    - Form validation libraries
+    - Alternative: VeeValidate 
