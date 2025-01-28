@@ -9,22 +9,18 @@ import Editor from '@tinymce/tinymce-vue';
 
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <a class="navbar-brand" href="#">NsAV</a>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Vue</a>
       <router-link to="/">HOME</router-link>
-      <router-link to="/Programs" msg="TESTETS">Programs</router-link>
+      <router-link to="/Programs" msg="TESTETS">Bootstrap</router-link>
+      <router-link to="/texteditor">Text Editor</router-link>
     </nav>
   </div>
   <h1>Vue.js Test Application</h1>
   <RouterView/>
   <InsertableTable/>
 
-  <Editor 
-    api-key="no-api-key" 
-    :init="{
-      plugins: 'lists link image table code help'
-    }"
-  />
+  
 </template>
 
 <style scoped>

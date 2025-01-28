@@ -27,46 +27,49 @@ function validData() {
 
 <template>
 
-<div class="Table">
-  <div class="Title">
-    <p>Participant Application Form Test App</p>
+<div class="card">
+  <div class="Table">
+    <div class="Title">
+      <p>Application Form - Insertable Table</p>
+    </div>
+    <div class="Heading">
+      <div class="Cell">
+        Name
+      </div>
+      <div class="Cell">
+        DOB
+      </div>
+      <div class="Cell">
+        Age
+      </div>
+      <div class="Cell">
+        Current placement
+      </div>
+    </div>
+    <div class="Row" v-for="(person, index) in personList" :key="index">
+      <div class="Cell">
+        {{ person.name }}
+
+      </div>
+      <div class="Cell">
+        {{ person.dob }}
+      </div>
+      <div class="Cell">
+        {{ getAge[index] }}
+      </div>
+    </div>
   </div>
-  <div class="Heading">
-    <div class="Cell">
-      Name
-    </div>
-    <div class="Cell">
-      DOB
-    </div>
-    <div class="Cell">
-      Age
-    </div>
-    <div class="Cell">
-      Current placement
-    </div>
-  </div>
-  <div class="Row" v-for="(person, index) in personList" :key="index">
-    <div class="Cell">
-      {{ person.name }}
 
-    </div>
-    <div class="Cell">
-      {{ person.dob }}
-    </div>
-    <div class="Cell">
-      {{ getAge[index] }}
-    </div>
-  </div>
-</div>
+  <br>
 
-
-<br>
-
-<div>
-Name: <input type='text' v-model='name'/><br>
-DOB: <input type='date' v-model='dob'/><br>
+  Name: <input type='text' v-model='name'/><br>
+  DOB: <input type='date' v-model='dob'/><br>
 <button type="button" @click="addData">Add</button>
+
 </div>
+
+
+
 </template>
 
 <style scoped>

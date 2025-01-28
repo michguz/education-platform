@@ -11,6 +11,7 @@
   "dependencies": {
     "@tinymce/tinymce-vue": "^4.0.7",
     "bootstrap": "^5.3.3",
+    "pinia": "^2.3.1",
     "tinymce": "^7.6.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
