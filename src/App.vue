@@ -12,7 +12,7 @@ import Editor from '@tinymce/tinymce-vue';
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">Vue</a>
       <router-link to="/">HOME</router-link>
-      <router-link to="/Programs" msg="TESTETS">Programs</router-link>
+      <router-link to="/Programs" msg="TESTETS">Bootstrap</router-link>
       <router-link to="/texteditor">Text Editor</router-link>
     </nav>
   </div>
